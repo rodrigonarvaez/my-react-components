@@ -1,5 +1,5 @@
 import type { StorybookConfig } from '@storybook/react-webpack5'
-import '../src/styles/index.css'
+import '../src/styles/tailwind.css'
 
 const config: StorybookConfig = {
   stories: [
