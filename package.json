@@ -5,9 +5,19 @@
   "scripts": {
     "build:css": "tailwindcss build src/styles/index.css -o dist/styles.css",
     "build": "npm run build:css && tsc",
-    "start": "npm run build:css && tsc -w"
+    "start": "npm run build:css && tsc -w",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "devDependencies": {
+    "@storybook/addon-essentials": "^7.6.12",
+    "@storybook/addon-interactions": "^7.6.12",
+    "@storybook/addon-links": "^7.6.12",
+    "@storybook/addon-onboarding": "^1.0.11",
+    "@storybook/blocks": "^7.6.12",
+    "@storybook/react": "^7.6.12",
+    "@storybook/react-webpack5": "^7.6.12",
+    "@storybook/test": "^7.6.12",
     "@types/node": "^20.11.16",
     "@types/react": "^18.2.52",
     "@types/react-dom": "^18.2.18",
@@ -16,6 +26,7 @@
     "prettier-plugin-tailwindcss": "^0.5.11",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "storybook": "^7.6.12",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.3.3"
   },
