@@ -1,4 +1,5 @@
 import type { StorybookConfig } from '@storybook/react-webpack5'
+import '../src/styles/index.css'
 
 const config: StorybookConfig = {
   stories: [
@@ -10,6 +11,7 @@ const config: StorybookConfig = {
     '@storybook/addon-essentials',
     '@storybook/addon-onboarding',
     '@storybook/addon-interactions',
+    '@storybook/addon-styling-webpack',
   ],
   framework: {
     name: '@storybook/react-webpack5',
