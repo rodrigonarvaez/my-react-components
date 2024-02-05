@@ -4,6 +4,10 @@
   "description": "The components I use for my projects.",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
+  "exports": {
+    "require": "./dist/index.js",
+    "import": "./dist/index.esm.js"
+  },
   "types": "dist/index.d.ts",
   "files": [
     "dist"

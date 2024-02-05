@@ -5,10 +5,18 @@ import terser from '@rollup/plugin-terser'
 
 export default {
   input: 'src/index.ts',
-  output: {
-    dir: 'dist',
-    format: 'cjs',
-  },
+  output: [
+    {
+      file: 'dist/index.js',
+      format: 'cjs',
+      sourcemap: true,
+    },
+    {
+      file: 'dist/index.esm.js',
+      format: 'esm',
+      sourcemap: true,
+    },
+  ],
   plugins: [resolve(), commonjs(), typescript(), terser()],
   external: ['react', 'react-dom'],
 }
